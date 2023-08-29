@@ -5,7 +5,7 @@ import { Hono } from 'hono';
 import { users } from './schema';
 
 const DATABASE_AUTH_TOKEN=""
-const DATABASE_URL=""
+const DATABASE_URL="http://127.0.0.1:8080"
 const client = createClient({ url: DATABASE_URL, authToken: DATABASE_AUTH_TOKEN });
 export const db = drizzle(client);
 
